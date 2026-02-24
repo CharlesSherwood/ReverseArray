@@ -1,0 +1,14 @@
+/*fileName:ReverseArray.cpp
+*ProgrammerName:Charles Sherwood 
+Date:2/24/26
+Requirements:This program populates an array of integers, then calls a function that
+dynamically creates a new array containing the same values in reverse order. The program
+must correctly deallocate all dynamically allocated memory before termination.
+*/
+#include <iostream>
+
+int main()
+{
+    std::cout << "Hello World!\n";
+}
+
