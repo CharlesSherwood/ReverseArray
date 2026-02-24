@@ -6,9 +6,29 @@ dynamically creates a new array containing the same values in reverse order. The
 must correctly deallocate all dynamically allocated memory before termination.
 */
 #include <iostream>
+using namespace std;
+
+//Create Prototypes
+int* ReverseArray(const int arr[], int size);
+void print(const int arr[], int size);
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+  
+
+
+
+
 }
 
+int* ReverseArray(const int arr[], int size)
+{
+
+
+}
+
+void print(const int arr[], int size)
+{
+
+}
