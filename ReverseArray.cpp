@@ -21,6 +21,16 @@ int main()
 
 	int* reversed = ReverseArray(original,SIZE);
 
+	cout << "Original Array: ";
+	print(original, SIZE);
+
+	cout << "Reversed Array: ";
+	print(reversed, SIZE);
+
+	delete[] reversed;
+
+	return 0;
+
 }
 
 int* ReverseArray(const int arr[], int size)
