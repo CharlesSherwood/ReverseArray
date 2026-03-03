@@ -17,16 +17,22 @@ int main()
 {
 	const int SIZE = 5;
 
+	//Populates the original array
 	int original[SIZE] = { 10,20,30,40,50 };
 
+	//call the function to create the  reverse array 
 	int* reversed = ReverseArray(original,SIZE);
 
+	//Displays the original Array with numbers in correct order 
 	cout << "Original Array: ";
 	print(original, SIZE);
 
+	//Displays the reversed Array 
 	cout << "Reversed Array: ";
 	print(reversed, SIZE);
 
+
+	//Deallocate the dynamically allocated memory
 	delete[] reversed;
 
 	return 0;
@@ -35,8 +41,10 @@ int main()
 
 int* ReverseArray(const int arr[], int size)
 {
+	//Allocate the new array
 	int* newarray = new int[size];
 
+	//copys the elements in reverse order
 	for (int i = 0; i < size; i++)
 	{
 			newarray[i] = arr[size - 1 - i];
@@ -44,6 +52,7 @@ int* ReverseArray(const int arr[], int size)
 	return newarray;
 }
 
+//Function to print the arrays onto the console
 void print(const int arr[], int size)
 {
 	for (int i = 0; i < size; i++)
