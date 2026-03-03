@@ -15,10 +15,11 @@ void print(const int arr[], int size);
 
 int main()
 {
-  
+	const int SIZE = 5;
 
+	int original[SIZE] = { 10,20,30,40,50 };
 
-	 
+	int* reversed = ReverseArray(original,SIZE);
 
 }
 
