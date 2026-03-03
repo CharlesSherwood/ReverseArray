@@ -24,8 +24,14 @@ int main()
 
 int* ReverseArray(const int arr[], int size)
 {
+	int* newarray = new int[size];
+	int i;
 
-
+	for (int i = 0; i < size; i++);
+	{
+			newarray[i] = arr[size - 1 - i];
+	}
+	return newarray;
 }
 
 void print(const int arr[], int size)
